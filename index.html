@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Bootstrap linking i css linking-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font awesome - dodaj ikonice -->
+
+    <!--Bootstrap scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!--Logo-->
+    <link rel="icon" href="images/favicon.ico" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Traveho</title>
+  </head>
+
+  <body>
+    <section id="title">
+      <div class="container - fluid">
+
+        <!-- Nav Bar -->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">Traveho</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Suggestions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Join</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+
+        <br /><br />
+        <div class="row">
+          <!--col-lg definise broj kolona za veliki ekran,
+          col-md za tablet, a col-sm za telefon dok ukupno unita moze biti 12 
+          pa se po tome ravnamo npr.ako nam treba 2 unita delimo sa 6 pa ce biti col-6. I col
+          mora biti u klasi row!-->
+          <div class="col-lg-6">
+            <h1>For all travel lovers and for those who are yet to become.</h1>
+            <button type="button" class="btn btn-info btn-lg fun-buttons">
+              Log in
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-warning btn-lg fun-buttons">
+              Sign up
+            </button>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              class="polaroid"
+              src="images/polaroid.png"
+              alt="beach_sunset"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature-box col-lg-4 col-md-12">
+            <img class="travel" src="images/luggage.png" alt="luggage_icon" />
+            <h3>Travel</h3>
+            <p>Pack your bags and take a trip of a lifetime.</p>
+          </div>
+          <div class="feature-box col-lg-4 col-md-12">
+            <img
+              class="discover"
+              src="images/research.png"
+              alt="discover_icon"
+            />
+            <h3>Discover</h3>
+            <p>Find interesting places and learn about new cultures.</p>
+          </div>
+          <div class="feature-box col-lg-4 col-md-12">
+            <img
+              class="share"
+              src="images/collaboration.png"
+              alt="share_icon"
+            />
+            <h3>Share</h3>
+            <p>
+              Post about your experience and invite others to take a visit as
+              well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes -->
+
+    <section id="quotes">
+      <h2>“It feels good to be lost in the right direction.”</h2>
+      <em>-Susan Sontag</em>
+
+      <h2>
+        “Man cannot discover new oceans unless he has the courage to lose sight
+        of the shore.”
+      </h2>
+      <em>-Andre Gide</em>
+
+      <h2>“Blessed are the curious for they shall have adventures.”</h2>
+      <em>-Lovelle Drachman</em>
+
+      <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+      <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+      <em>Beverly, Illinois</em> -->
+    </section>
+
+    <!-- Destinations -->
+
+    <!-- Slide show - section 7, lesson 81 explenation -->
+    <section id="destinations">
+      <div id="destination-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="forest" src="images/forest.jpg" alt="forest_pic" />
+            <h2>A hike through the forest in Nicaragua.</h2>
+            <p>For those who want to connect with nature.</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="mountain"
+              src="images/mountain.jpg"
+              alt="mountain_pic"
+            />
+            <h2>A climb to the top of the Atlas mountain.</h2>
+            <p>For those who seek true adventure.</p>
+          </div>
+          <div class="carousel-item">
+            <img class="beach" src="images/beach.jpg" alt="beach_pic" />
+            <h2>A lazy vacation at the Costa Rica beach.</h2>
+            <p>For those who want to escape the hectic routine.</p>
+          </div>
+          <div class="carousel-item">
+            <img class="village" src="images/village.jpg" alt="village_pic" />
+            <h2>A stroll through the village of Positano.</h2>
+            <p>For those who want to enjoy mediteranian climate.</p>
+          </div>
+          <div class="carousel-item">
+            <img class="city" src="images/city.jpg" alt="city_pic" />
+            <h2>A tour of New York.</h2>
+            <p>For those who love fast-paced sightseeing.</p>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#destination-carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#destination-carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+      <h2>Find the perfect trip today!</h2>
+      <button type="button" class="btn btn-info btn-lg fun-buttons">Log in</button>
+      <button type="button" class="btn btn-outline-warning btn-lg fun-buttons">Sign ip</button>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <p>© Copyright 2021 Traveho</p>
+    </footer>
+  </body>
+</html>

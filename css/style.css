@@ -1,0 +1,275 @@
+/*Practice code refactoring during code writing not when it's all done!
+DRY > WET coding*/
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    padding-left: 0;
+}
+a.navbar-brand {
+    color: #ffeca0!important;
+    font-size: 2rem;
+}
+.nav-item {
+    padding:0 20px;
+}
+.nav-link {
+    font-size: 1rem;
+}
+
+/* Section 1 - title */
+
+#title {
+    background-color: #f7631c;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #ffd343;
+    margin-top: 25px;
+    padding-top: 80px;
+    font-weight: bold;
+}
+.container-fluid {
+    padding: 3% 15%;
+
+}
+.polaroid {
+    width: 430px;
+    height: 480px;
+    margin-top: 60px;
+    margin-left: 50px;
+    transform: rotate(15deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Buttons */
+
+.btn-info {
+    background-color: #ffd343 !important;
+    color: rgb(77, 135, 211) !important;
+}
+.btn-outline-warning {
+    background-color: rgb(77, 135, 211) !important;
+    color: #ffd343 !important;
+}
+.fun-buttons {
+    margin: 5% 3% 5% 0;
+}
+
+/* Section 2 - features */
+
+.travel {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+.discover {
+    width:150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+.share {
+    width:150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+#features {
+    background-color:#ffeca0;
+    padding: 3% 6%
+}
+.feature-box {
+    text-align: center;
+    line-height: 1.5;
+    padding: 5%;
+}
+h3 {
+    padding-top: 10px;
+    font-weight: bolder;
+    color: rgb(77, 135, 211);
+}
+p {
+    color:#363636;
+}
+
+/* Section 3 - quotes */
+
+#quotes {
+    padding: 7% 14%;
+    text-align: center;
+    line-height: 4;
+    background-color:#f7631c;
+    color: #ffd343;
+}
+h2 {
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+em {
+    color: #ffeca0;
+}
+
+/* Section 4 - destinations */
+
+.forest{
+    width:500px;
+    height:500px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+}
+.mountain{
+    width:500px;
+    height:500px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+}
+.beach{
+    width:500px;
+    height:500px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+}
+.village{
+    width:500px;
+    height:500px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+}
+.city{
+    width:500px;
+    height:500px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+}
+#destinations {
+   
+    text-align: center;
+    background-color: #ffeca0;
+    color: rgb(77, 135, 211);
+    line-height: 2;
+    font-size: 1.25rem;
+}
+.carousel-item {
+    padding: 7% 14%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 50px;
+  color: rgb(77, 135, 211);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 50px;
+  color: rgb(77, 135, 211);
+}
+
+/* Section 5 - call to action */
+
+#cta {
+    padding: 2% 4%;
+    background-color:#f7631c;
+    color: #ffd343;
+    text-align: center;
+    
+}
+#cta > h2 {
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+/* Section 5 - footer */
+
+#footer {
+    background-color: #ffeca0;
+    padding: 5% 1% 0.25% 1%;
+    text-align: center;
+}
+
+/* Responsivnes via media queries */
+
+@media (max-width: 1028px) {
+ /*sta se desava kako se ova pixelaza smanjuje od zadate tj za tablet i telefon rezoluciju*/
+ .polaroid {
+     transform: rotate(0);
+     margin-left: 10px;
+ }
+ #title {
+     padding-bottom: 100px;
+     text-align: center;
+ }
+ #destinations {
+     text-align: center;
+ }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  background-image: none;
+ }
+.carousel-control-next-icon:after
+ {
+  content: '>';
+  font-size: 25px;
+  color: rgb(77, 135, 211);
+ }
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 25px;
+  color: rgb(77, 135, 211);
+  }
+.forest {
+    width:300px;
+    height:300px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+ } 
+.mountain {
+    width:300px;
+    height:300px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+ }
+.beach {
+    width:300px;
+    height:300px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+} 
+.village {
+    width:300px;
+    height:300px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+ }
+.city {
+    width:300px;
+    height:300px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+ }
+}
+
+
+
